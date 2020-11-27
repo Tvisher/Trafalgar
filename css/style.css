@@ -854,6 +854,7 @@ section {
 @media (max-width: 1240px) {
   .container {
     width: 100%;
+    padding: 0 15px;
   }
 }
 
@@ -897,6 +898,10 @@ section {
   .article__card {
     border: 1px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
+  }
+  .header__menu,
+  .header__img {
+    margin-right: 0;
   }
 }
 
@@ -976,7 +981,7 @@ section {
     top: -100%;
     background: #fff;
     z-index: 20;
-    padding: 75px 30px 0px 0px;
+    padding: 75px 25px 0px 0px;
     width: 60%;
     height: 210vh;
     -webkit-box-pack: start;
@@ -997,7 +1002,7 @@ section {
     font-size: 22px;
   }
   .header__menu.active {
-    right: 8px;
+    right: -15px;
     top: 0;
   }
   .header__navigation {
@@ -1012,7 +1017,7 @@ section {
   .header__burger {
     cursor: pointer;
     position: absolute;
-    right: 15px;
+    right: 0;
     top: 10px;
     width: 50px;
     height: 50px;
@@ -1075,6 +1080,34 @@ section {
   }
   .footer {
     padding: 50px 0;
+  }
+  .block__content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .block__content .block__content p {
+    max-width: 100%;
+  }
+  .apps__block2 .block__content {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .apps__block2 .block__content h2::after {
+    right: 0;
+    left: inherit;
+  }
+  .apps__block2 .block__content p {
+    margin-left: auto;
+    text-align: end;
+  }
+  .apps__block2 .block__content a {
+    margin-left: auto;
+  }
+  .services__wrapper {
+    padding-bottom: 60px;
   }
 }
 
