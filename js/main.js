@@ -75,7 +75,7 @@ window.addEventListener('scroll', () => {
         selector: '.list__item',
         animation: 'animate__bounceIn',
         delay: 200,
-        height: 80,
+        height: 10,
     });
     animated({
         selector: '.services__text',
@@ -106,13 +106,22 @@ window.addEventListener('scroll', () => {
         height: 100,
         // delay: 500
     });
+    if (document.documentElement.clientWidth >= 768) {
+        animated({
+            selector: '.article__card',
+            animation: 'animate__slideInUp',
+            height: 200,
+            delay: 100
+        });
+    } else {
+        animated({
+            selector: '.article__card',
+            animation: 'animate__fadeInTopLeft',
+            height: 200,
+            delay: 100
+        });
+    }
 
-    animated({
-        selector: '.article__card',
-        animation: 'animate__slideInUp',
-        height: 200,
-        delay: 100
-    });
     animated({
         selector: '.testimonials__wrapper',
         animation: 'animate__fadeInBottomRight',
