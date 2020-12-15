@@ -770,6 +770,9 @@ section {
         margin-left: 0;
         margin-bottom: 25px;
     }
+    .block__content {
+        margin-bottom: 25px;
+    }
 
     .slide__content {
         flex-direction: column;
@@ -841,7 +844,7 @@ section {
         }
 
         &.active {
-            right: 8px;
+            right: -10px;
             top: 0;
         }
     }

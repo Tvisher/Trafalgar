@@ -54,7 +54,7 @@ const animated = (data) => {
         if (!actuationHeight) {
             actuationHeight = thirdHeight;
         }
-        if (topOfWindow + actuationHeight < 0) {
+        if ((topOfWindow + actuationHeight) < 0) {
             setTimeout(() => {
                 item.classList.add(`${data.animation}`);
                 item.style.opacity = 1;
@@ -93,11 +93,11 @@ window.addEventListener('scroll', () => {
     });
     animated({
         selector: '.apps__block .block__content',
-        animation: 'animate__jackInTheBox',
+        animation: 'animate__fadeInBottomLeft',
     });
     animated({
         selector: '.apps__block2 .block__content',
-        animation: 'animate__jackInTheBox',
+        animation: 'animate__fadeInBottomLeft',
     });
 
     animated({

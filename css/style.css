@@ -917,6 +917,9 @@ section {
     margin-left: 0;
     margin-bottom: 25px;
   }
+  .block__content {
+    margin-bottom: 25px;
+  }
   .slide__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1001,7 +1004,7 @@ section {
     font-size: 22px;
   }
   .header__menu.active {
-    right: 8px;
+    right: -10px;
     top: 0;
   }
   .header__navigation {
