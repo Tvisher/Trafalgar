@@ -17,7 +17,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding-top: 56px;
-    // margin-bottom: 80px;
+    z-index: 16;
     margin-bottom: 50px;
     position: relative;
 
@@ -368,7 +368,6 @@ section {
                     -ms-transition: all 0.5s ease;
                     -o-transition: all 0.5s ease;
                 }
-
             }
         }
     }
@@ -692,14 +691,13 @@ section {
         color: #ffffff;
     }
 
-    li>a {
+    li > a {
         font-weight: 300;
         font-size: 18px;
         line-height: 38px;
         color: #ffffff;
     }
 }
-
 
 @media (max-width: 1240px) {
     .container {
@@ -803,7 +801,6 @@ section {
     .apps__block .block__img {
         margin-left: 0;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -832,7 +829,7 @@ section {
         height: 210vh;
         justify-content: flex-start;
         align-items: flex-end;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
 
         .menu__item {
             width: 100%;
@@ -852,7 +849,6 @@ section {
 
     .header__navigation {
         padding-top: 20px;
-
     }
 
     .header {
@@ -867,10 +863,9 @@ section {
         cursor: pointer;
         position: absolute;
         right: 15px;
-        top: 10px;
+        top: 16px;
         width: 50px;
         height: 50px;
-        // background: #000;
         z-index: 30;
         display: flex;
         align-items: center;
@@ -891,7 +886,7 @@ section {
                 height: 4px;
                 background: #458ff6;
                 bottom: 12px;
-                transition: all .5s ease;
+                transition: all 0.5s ease;
             }
 
             &::after {
@@ -902,7 +897,7 @@ section {
                 height: 4px;
                 background: #458ff6;
                 bottom: -12px;
-                transition: all .5s ease;
+                transition: all 0.5s ease;
             }
         }
 
@@ -932,8 +927,6 @@ section {
     .footer {
         padding: 50px 0;
     }
-
-
 }
 
 @media (max-width: 560px) {
@@ -952,7 +945,6 @@ section {
         }
     }
 
-
     .slide__item {
         margin-right: 0;
 
@@ -960,7 +952,6 @@ section {
             line-height: 100%;
             margin-bottom: 14px;
         }
-
     }
 
     .footer__wrapper {
@@ -1010,5 +1001,15 @@ section {
 
     .header__btn {
         margin: 0 auto;
+    }
+}
+
+.block__img,
+.list__item {
+    &.animate__animated {
+        opacity: 0;
+    }
+    &.animate__bounceInUp {
+        opacity: 1;
     }
 }

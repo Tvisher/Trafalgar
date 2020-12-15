@@ -11,21 +11,39 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><img src="img/nextArrow.svg"></button>',
     });
 
+    $(window).scroll(function () {
+        $('.apps__block .block__img').each(function () {
+            let imagePos = $(this).offset().top;
+            let topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 650) {
+                $(this).addClass(" animate__fadeInLeft");
+            }
+        });
+    });
+
+    $(window).scroll(function () {
+        $('.apps__block2 .block__img').each(function () {
+            let imagePos = $(this).offset().top;
+            let topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 650) {
+                $(this).addClass(" animate__fadeInRight");
+            }
+        });
+    });
+
+    $(window).scroll(function () {
+        $('.list__item').each(function () {
+            let imagePos = $(this).offset().top;
+            let topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 650) {
+                $(this).addClass("animate__bounceIn");
+            }
+        });
+    });
+
+
 });
 
-// let burgerMenu = document.querySelector('.header__burger');
-// document.addEventListener('click', (e) => {
-//     if (!e.target.closest('.header__burger')) {
-//         return;
-//     }
-//     let burgerBtn = document.querySelector('.header__burger');
-//     let overlay = document.querySelector('.overlay');
-//     let menu = document.querySelector('.header__menu');
-//     menu.classList.toggle('active');
-//     overlay.classList.toggle('active');
-//     burgerBtn.classList.toggle('active');
-
-// })
 
 let burger = document.querySelector('.header__burger');
 let menu = document.querySelector('.header__menu ');
