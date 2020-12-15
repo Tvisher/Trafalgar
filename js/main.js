@@ -104,7 +104,7 @@ window.addEventListener('scroll', () => {
         selector: '.article__title',
         animation: 'animate__fadeInTopRight',
         height: 100,
-        delay: 500
+        // delay: 500
     });
 
     animated({
@@ -127,7 +127,7 @@ window.addEventListener('scroll', () => {
 
     });
     animated({
-        selector: '.footer__wrapper',
+        selector: '.footer',
         animation: 'animate__zoomInUp',
         height: 200,
         delay: 100
