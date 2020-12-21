@@ -261,25 +261,6 @@ section {
   color: #458ff6;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 15;
-  background: rgba(0, 0, 0, 0.65);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .header__burger {
   display: none;
 }
@@ -954,6 +935,24 @@ section {
 }
 
 @media (max-width: 768px) {
+  .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
   .header__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
